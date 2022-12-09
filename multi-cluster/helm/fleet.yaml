@@ -9,6 +9,7 @@ targetCustomizations:
 - name: eks
   helm:
     values:
+      serviceType: LoadBalancer
       replicas: 1
   clusterSelector:
     matchLabels:
