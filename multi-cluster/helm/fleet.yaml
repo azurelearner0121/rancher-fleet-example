@@ -7,9 +7,8 @@ targetCustomizations:
   clusterSelector:
     matchLabels:
       cloud: aks
-
 - name: eks
-   helm:
+  helm:
     values:
       replicas: 1
   clusterSelector:
