@@ -14,3 +14,10 @@ targetCustomizations:
   clusterSelector:
     matchLabels:
       cloud: eks
+- name: local
+  - name: host
+    helm:
+      values:
+        replicas: 3     
+    clusterSelector:
+    clusterGroup: default
