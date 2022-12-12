@@ -17,6 +17,6 @@ targetCustomizations:
 - name: local
   helm:
     values:
-      serviceType: LoadBalancer
+      serviceType: NodePort
       replicas: 3     
   clusterGroup: default
