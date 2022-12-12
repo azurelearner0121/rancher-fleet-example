@@ -17,5 +17,6 @@ targetCustomizations:
 - name: local
   helm:
     values:
+      serviceType: LoadBalancer
       replicas: 3     
   clusterGroup: default
