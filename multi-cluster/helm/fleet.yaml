@@ -9,7 +9,7 @@ targetCustomizations:
 - name: eks
   helm:
     values:
-      serviceType: LoadBalancer
+      serviceType: NodePort
       replicas: 1
   clusterSelector:
     matchLabels:
